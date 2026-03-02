@@ -83,7 +83,7 @@ function atualizarRelogio() {
 
   // atualiza o texto descritivo com a porcentagem exata, formatada com uma casa decimal
   if (percentText)
-    percentText.innerText = `${percentual.toFixed(1)}% do ano concluído`;
+    percentText.innerText = `${percentual.toFixed(1)}% ${lang.concluido}`;
 }
 
 setInterval(atualizarRelogio, 1000);
