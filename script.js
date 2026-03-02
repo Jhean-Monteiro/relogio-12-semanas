@@ -44,6 +44,11 @@ function atualizarRelogio() {
   const elDia = document.getElementById("dia-display");
   const elRelogio = document.getElementById("relogio");
 
+  // (testando)
+  if (elAno) elAno.innerText = `${lang.ano} ${anoAtual}`;
+  if (elMes) elMes.innerText = `${lang.mes} ${mesAtual}`;
+  if (elDia) elDia.innerText = `${lang.dia} ${diaNoMes}`;
+
   if (elAno) elAno.innerText = `ANO ${anoAtual}`;
   if (elMes) elMes.innerText = `MÊS ${mesAtual}`;
   if (elDia) elDia.innerText = `DIA ${diaNoMes}`;
