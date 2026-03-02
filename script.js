@@ -1,3 +1,24 @@
+const traducoes = {
+  pt: {
+    ano: "ANO",
+    mes: "MÊS",
+    dia: "DIA",
+    concluido: "do ano concluído",
+  },
+  en: {
+    ano: "YEAR",
+    mes: "MONTH",
+    dia: "DAY",
+    concluido: "of the year completed",
+  },
+};
+
+// detectamos o idioma do sistema (ex: 'pt-BR' vira 'pt')
+const idiomaUsuario = navigator.language.slice(0, 2);
+// se o sistema estiver em inglês, usa 'en'. Se não, o padrão é 'pt'.
+const lang = traducoes[idiomaUsuario] || traducoes["pt"];
+
+
 function atualizarRelogio() {
   const agora = new Date();
 
