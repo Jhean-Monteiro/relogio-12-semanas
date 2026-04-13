@@ -1,13 +1,13 @@
 const traducoes = {
   pt: {
     ano: "ANO",
-    mes: "MÊS",
+    mes: "SEMANA",
     dia: "DIA",
     concluido: "do ano concluído",
   },
   en: {
     ano: "YEAR",
-    mes: "MONTH",
+    mes: "WEEK",
     dia: "DAY",
     concluido: "of the year completed",
   },
